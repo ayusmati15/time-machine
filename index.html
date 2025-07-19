@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Time machine!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📩 Time machine!</h1>
+    <p>Write a message to your future self to remind you of the past memories.</p>
+
+    <div class="form-area">
+      <textarea id="messageInput" placeholder="Dear future me i want ot tell you that..." rows="4"></textarea><br>
+      <label for="delay">Open after: </label>
+      <select id="delay">
+         <option value="5">5 seconds</option>
+        <option value="10">10 seconds</option>
+        <option value="20">20 seconds</option>
+        <option value="30">30 seconds</option>
+        <option value="45">45 seconds</option>
+        <option value="60">1 minutes</option>
+        <option value="120">2 minutes</option>
+            
+      </select>
+      <br><br>
+      <button onclick="lockMessage()">Lock Message 🔒</button>
+    </div>
+
+    <div id="countdown"></div>
+    <div id="revealMessage" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
